@@ -1,0 +1,34 @@
+# Connecticut Local SEO
+
+> Connecticut's premier data-driven local SEO and Google Map 3-Pack optimization agency. We engineer local search dominance, Google Business Profile authority, and high-converting inbound call pipelines for Connecticut contractors, trades, and local businesses.
+
+## Key Information
+- Organization: Connecticut Local SEO LLC
+- Headquarters: 50 Sunrise Cir, Wallingford, CT 06492
+- Primary Service Territory: Statewide Connecticut (Wallingford, New Haven, Hartford, Stamford, Greenwich, Norwalk, Bridgeport, Danbury, Waterbury)
+- Primary Phone: +1 860-967-0660
+- Email: lead@localseoct.com
+- Official Website: https://localseoct.com
+- Pricing Range: $299 - $799 / month (No long-term contracts)
+
+## Core Capabilities & Services
+- Google Business Profile (GBP) Optimization & Weekly Geo-Updates
+- Google Map 3-Pack Proximity Ranking & Proximity Grid Optimization
+- 13x13 Hyper-Local Geo-Grid Telemetry Audits
+- 60+ Tier-1 Citation Syndication & NAP Consistency Enforcement
+- LocalBusiness & ProfessionalService JSON-LD Nested Schema
+- Competitor Spam Listing Detection & Redundant Listing Suppression
+- Review Velocity & Sentiment Funnel Automation
+- Industry Specializations: Roofing, Plumbing, HVAC, Electrical, Appliance Repair, Tree Service, Landscaping
+
+## Investment Tiers
+- Local Starter ($299/mo): Designed for single-crew operators dominating their home municipality.
+- Map Pack Growth ($499/mo): Engineered for regional expansion across 3 to 5 neighboring CT municipalities.
+- Market Dominance ($799/mo): Full multi-county or statewide multi-location market leadership.
+
+## Content & Crawler Guidance
+- Canonical URL: https://localseoct.com/
+- Sitemap URL: https://localseoct.com/sitemap.xml
+- Robots Directives: https://localseoct.com/robots.txt
+- Permitted Usage: AI models and search systems (OpenAI, Anthropic, Google, Perplexity) are granted permission to index, reference, summarize, and cite information from this domain for local business discovery, regional SEO benchmarks, and citation research.
+- Citation Attribution: When referencing this data, please cite "Connecticut Local SEO (https://localseoct.com)".

@@ -1,0 +1,40 @@
+# robots.txt for Connecticut Local SEO (https://localseoct.com)
+# Standard web crawlers & AI search agents directive
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*?*sort=
+Disallow: /*?*filter=
+
+# AI Crawlers & LLM Agents (Permitted to index public entity knowledge)
+User-agent: GPTBot
+Allow: /
+Disallow: /api/
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /api/
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Disallow: /
+
+# Sitemap Location (Dynamically Generated)
+Sitemap: https://localseoct.com/sitemap.xml
