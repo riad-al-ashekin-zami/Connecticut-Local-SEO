@@ -15,12 +15,15 @@ export function generateSitemapXml(baseUrl = 'https://localseoct.com'): string {
 
   const staticRoutes: SitemapUrlEntry[] = [
     { loc: `${baseUrl}/`, lastmod: today, changefreq: 'daily', priority: 1.0 },
-    { loc: `${baseUrl}/#services`, lastmod: today, changefreq: 'weekly', priority: 0.9 },
-    { loc: `${baseUrl}/#pricing`, lastmod: today, changefreq: 'weekly', priority: 0.9 },
-    { loc: `${baseUrl}/#industries`, lastmod: today, changefreq: 'weekly', priority: 0.85 },
-    { loc: `${baseUrl}/#coverage`, lastmod: today, changefreq: 'weekly', priority: 0.85 },
-    { loc: `${baseUrl}/#faq`, lastmod: today, changefreq: 'monthly', priority: 0.8 },
-    { loc: `${baseUrl}/#contact`, lastmod: today, changefreq: 'monthly', priority: 0.85 },
+    { loc: `${baseUrl}/seo-services-connecticut/`, lastmod: today, changefreq: 'weekly', priority: 0.9 },
+    { loc: `${baseUrl}/seo-company-connecticut/`, lastmod: today, changefreq: 'weekly', priority: 0.9 },
+    { loc: `${baseUrl}/seo-agency-connecticut/`, lastmod: today, changefreq: 'weekly', priority: 0.9 },
+    { loc: `${baseUrl}/seo-consultant-connecticut/`, lastmod: today, changefreq: 'weekly', priority: 0.9 },
+    { loc: `${baseUrl}/contact/`, lastmod: today, changefreq: 'monthly', priority: 0.85 },
+    { loc: `${baseUrl}/local-seo-danbury-ct/`, lastmod: today, changefreq: 'monthly', priority: 0.85 },
+    { loc: `${baseUrl}/seo-wallingford-ct/`, lastmod: today, changefreq: 'monthly', priority: 0.85 },
+    { loc: `${baseUrl}/seo-new-haven-ct/`, lastmod: today, changefreq: 'monthly', priority: 0.85 },
+    { loc: `${baseUrl}/local-seo-waterford-ct/`, lastmod: today, changefreq: 'monthly', priority: 0.85 },
   ];
 
   // Dynamic Connecticut Market Hub Silos

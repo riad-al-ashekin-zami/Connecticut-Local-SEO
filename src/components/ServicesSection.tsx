@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Map, Share2, Sparkles, Terminal, Check, ArrowUpRight } from 'lucide-react';
 import { SERVICES_DATA } from '../data/content';
 
@@ -33,9 +34,11 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenAudit })
               Precision Tactical Capabilities
             </span>
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight uppercase">
-            Connecticut Local SEO Services <br className="hidden sm:inline" />
-            <span className="text-orange-500 underline decoration-4 underline-offset-4">Built for Scalable Revenue</span>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight uppercase hover:text-orange-400 transition-colors cursor-pointer">
+            <Link to="/seo-services-connecticut/">
+              Connecticut Local SEO Services <br className="hidden sm:inline" />
+              <span className="text-orange-500 underline decoration-4 underline-offset-4">Built for Scalable Revenue</span>
+            </Link>
           </h2>
           <p className="text-slate-300 text-base sm:text-lg leading-relaxed">
             Whether you require an authoritative <strong className="text-white">local seo consultant ct</strong> to diagnose plateaued rankings or full-scale execution of elite <strong className="text-white">connecticut local seo services</strong>, our four modular pillars engineer unbreakable regional visibility.

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { MapPin, Phone, Globe, ShieldCheck, Clock, ArrowRight, CheckCircle2 } from 'lucide-react';
 import { BUSINESS_ENTITY } from '../data/content';
 
@@ -7,7 +8,7 @@ interface FooterProps {
   onOpenAudit: () => void;
 }
 
-export const Footer: React.FC<FooterProps> = ({ onOpenAudit }) => {
+export const Footer: React.FC<FooterProps> = ({ onOpenAudit, onOpenDevToolkit }) => {
   return (
     <footer className="bg-slate-950 text-slate-400 text-xs border-t border-slate-800 relative overflow-hidden">
       {/* Subtle background glow */}
@@ -56,7 +57,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenAudit }) => {
           
           {/* Col 1: Brand Authority & Statement */}
           <div className="lg:col-span-4 md:col-span-6 space-y-5">
-            <a href="#hero" className="flex items-center gap-3 group inline-flex">
+            <Link to="/" className="flex items-center gap-3 group inline-flex">
               <div className="w-10 h-10 rounded-sm bg-orange-600 flex items-center justify-center text-white font-black text-lg shadow-lg shadow-orange-950/60 group-hover:bg-orange-500 transition">
                 CT
               </div>
@@ -68,7 +69,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenAudit }) => {
                   localseoct.com
                 </span>
               </div>
-            </a>
+            </Link>
 
             <p className="text-slate-400 text-xs leading-relaxed">
               Connecticut’s dedicated local search optimization agency. We transform invisible red geo-grids into green top-3 Google Map Pack positions, generating qualified inbound phone calls and high-ticket contracts for service contractors and local businesses.
@@ -93,52 +94,52 @@ export const Footer: React.FC<FooterProps> = ({ onOpenAudit }) => {
               </div>
               <ul className="space-y-2 text-slate-300 font-bold text-xs">
                 <li>
-                  <a href="#services" className="hover:text-orange-400 transition flex items-center gap-1.5">
-                    <span className="text-orange-500">›</span> Services
-                  </a>
+                  <Link to="/seo-services-connecticut/" className="hover:text-orange-400 transition flex items-center gap-1.5">
+                    <span className="text-orange-500">›</span> SEO Services
+                  </Link>
                 </li>
                 <li>
-                  <a href="#pricing" className="hover:text-orange-400 transition flex items-center gap-1.5">
-                    <span className="text-orange-500">›</span> Pricing Plans
-                  </a>
+                  <Link to="/seo-company-connecticut/" className="hover:text-orange-400 transition flex items-center gap-1.5">
+                    <span className="text-orange-500">›</span> SEO Company
+                  </Link>
                 </li>
                 <li>
-                  <a href="#contact" className="hover:text-orange-400 transition flex items-center gap-1.5">
-                    <span className="text-orange-500">›</span> Contact & Audit
-                  </a>
+                  <Link to="/seo-agency-connecticut/" className="hover:text-orange-400 transition flex items-center gap-1.5">
+                    <span className="text-orange-500">›</span> SEO Agency
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/contact/" className="hover:text-orange-400 transition flex items-center gap-1.5">
+                    <span className="text-orange-500">›</span> Contact
+                  </Link>
                 </li>
               </ul>
             </div>
 
             <div>
               <div className="text-xs font-black uppercase tracking-widest text-slate-400 border-l-2 border-slate-700 pl-2 mb-2.5">
-                Secondary Architecture
+                Target Locations
               </div>
               <ul className="space-y-2 text-slate-400 font-medium text-xs">
                 <li>
-                  <a href="#problem" className="hover:text-orange-400 transition flex items-center gap-1.5">
-                    <span className="text-slate-600">›</span> The Local Advantage
-                  </a>
+                  <Link to="/local-seo-danbury-ct/" className="hover:text-orange-400 transition flex items-center gap-1.5">
+                    <span className="text-slate-600">›</span> Danbury, CT
+                  </Link>
                 </li>
                 <li>
-                  <a href="#performance-proof" className="hover:text-orange-400 transition flex items-center gap-1.5">
-                    <span className="text-slate-600">›</span> Proof of Performance
-                  </a>
+                  <Link to="/seo-wallingford-ct/" className="hover:text-orange-400 transition flex items-center gap-1.5">
+                    <span className="text-slate-600">›</span> Wallingford, CT
+                  </Link>
                 </li>
                 <li>
-                  <a href="#industries" className="hover:text-orange-400 transition flex items-center gap-1.5">
-                    <span className="text-slate-600">›</span> Industry Specializations
-                  </a>
+                  <Link to="/seo-new-haven-ct/" className="hover:text-orange-400 transition flex items-center gap-1.5">
+                    <span className="text-slate-600">›</span> New Haven, CT
+                  </Link>
                 </li>
                 <li>
-                  <a href="#roadmap" className="hover:text-orange-400 transition flex items-center gap-1.5">
-                    <span className="text-slate-600">›</span> 6-Month Roadmap
-                  </a>
-                </li>
-                <li>
-                  <a href="#faqs" className="hover:text-orange-400 transition flex items-center gap-1.5">
-                    <span className="text-slate-600">›</span> Local Search FAQs
-                  </a>
+                  <Link to="/local-seo-waterford-ct/" className="hover:text-orange-400 transition flex items-center gap-1.5">
+                    <span className="text-slate-600">›</span> Waterford, CT
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -222,9 +223,9 @@ export const Footer: React.FC<FooterProps> = ({ onOpenAudit }) => {
           <div className="flex flex-wrap items-center gap-4 text-slate-400">
             <span>Primary Category: {BUSINESS_ENTITY.category}</span>
             <span>•</span>
-            <a href="#contact" className="hover:text-slate-200 transition">Privacy Policy</a>
+            <Link to="/contact/" className="hover:text-slate-200 transition">Privacy Policy</Link>
             <span>•</span>
-            <a href="#contact" className="hover:text-slate-200 transition">Terms of Service</a>
+            <Link to="/contact/" className="hover:text-slate-200 transition">Terms of Service</Link>
             <span>•</span>
             <span className="text-emerald-400 font-medium">100% Guaranteed NAP Consistency</span>
           </div>
