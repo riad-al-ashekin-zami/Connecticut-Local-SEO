@@ -3,14 +3,15 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Layout } from './components/layout/Layout';
 import { Home } from './pages/Home';
 import { SeoServices } from './pages/SeoServices';
-import { SeoCompany } from './pages/SeoCompany';
-import { SeoAgency } from './pages/SeoAgency';
+import { Pricing } from './pages/Pricing';
 import { SeoConsultant } from './pages/SeoConsultant';
 import { Contact } from './pages/Contact';
 import { Danbury } from './pages/locations/Danbury';
 import { Wallingford } from './pages/locations/Wallingford';
 import { NewHaven } from './pages/locations/NewHaven';
 import { Waterford } from './pages/locations/Waterford';
+import { FreeAudit } from './pages/FreeAudit';
+import { ThankYou } from './pages/ThankYou';
 
 export default function App() {
   return (
@@ -20,11 +21,13 @@ export default function App() {
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
             <Route path="seo-services-connecticut" element={<SeoServices />} />
-            <Route path="seo-company-connecticut" element={<SeoCompany />} />
-            <Route path="seo-agency-connecticut" element={<SeoAgency />} />
+            <Route path="pricing" element={<Pricing />} />
             <Route path="seo-consultant-connecticut" element={<SeoConsultant />} />
             <Route path="contact" element={<Contact />} />
             
+            <Route path="free-seo-audit" element={<FreeAudit />} />
+            <Route path="thank-you" element={<ThankYou />} />
+
             {/* Locations */}
             <Route path="local-seo-danbury-ct" element={<Danbury />} />
             <Route path="seo-wallingford-ct" element={<Wallingford />} />

@@ -10,16 +10,6 @@ export function Contact() {
         <link rel="canonical" href="https://localseoct.com/contact/" />
       </Helmet>
 
-      <section className="pt-32 pb-10 bg-slate-950 text-slate-50 text-center">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl md:text-5xl font-black uppercase tracking-tight text-white mb-6">
-            Get in <span className="text-orange-500">Touch</span>
-          </h1>
-          <p className="text-lg text-slate-400 font-medium max-w-2xl mx-auto">
-            Ready to dominate the Google Map Pack in Connecticut? Fill out the form below to request your free hyper-local SEO audit, or call us directly.
-          </p>
-        </div>
-      </section>
 
       {/* The ContactSection component already contains the form and company info */}
       <ContactSection />

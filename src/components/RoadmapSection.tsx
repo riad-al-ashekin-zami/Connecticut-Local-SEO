@@ -8,22 +8,22 @@ interface RoadmapSectionProps {
 
 export const RoadmapSection: React.FC<RoadmapSectionProps> = ({ onOpenAudit }) => {
   return (
-    <section id="roadmap" className="py-20 bg-slate-950 text-slate-50 border-t border-slate-800 relative">
+    <section id="roadmap" className="py-20 bg-white text-slate-900 border-t border-slate-200 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center space-y-4 mb-16">
-          <div className="bg-orange-600/10 border-l-4 border-orange-600 px-4 py-2 w-fit mx-auto">
-            <span className="text-xs font-bold uppercase tracking-widest text-orange-400 flex items-center gap-2">
+          <div className="bg-orange-500/10 border-l-4 border-orange-500 px-4 py-2 w-fit mx-auto">
+            <span className="text-xs font-bold uppercase tracking-widest text-blue-600 flex items-center gap-2">
               <Milestone className="w-3.5 h-3.5" />
               Transparent Implementation Timeline
             </span>
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight uppercase">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight uppercase">
             The 6-Month Local SEO Roadmap: <br className="hidden sm:inline" />
-            <span className="text-orange-500 underline decoration-4 underline-offset-4">Engineered for Measurable ROI</span>
+            <span className="text-blue-600 underline decoration-4 underline-offset-4">Engineered for Measurable ROI</span>
           </h2>
-          <p className="text-slate-300 text-base sm:text-lg leading-relaxed">
+          <p className="text-slate-600 text-base sm:text-lg leading-relaxed">
             No vague retainers or hidden tasks. We operate on a clear, milestone-driven sprint framework that systematically diagnoses algorithmic bottlenecks, cements local proximity signals, and scales inbound phone calls.
           </p>
         </div>
@@ -33,12 +33,12 @@ export const RoadmapSection: React.FC<RoadmapSectionProps> = ({ onOpenAudit }) =
           {ROADMAP_DATA.map((milestone, index) => (
             <div
               key={milestone.month}
-              className="bg-slate-900 rounded-lg border border-slate-800 p-8 flex flex-col justify-between hover:border-orange-500/70 transition duration-300 shadow-2xl relative group"
+              className="bg-slate-50 rounded-lg border border-slate-200 p-8 flex flex-col justify-between hover:border-orange-500/70 transition duration-300 shadow-2xl relative group"
             >
               {/* Step indicator badge */}
               <div className="space-y-4">
-                <div className="flex items-center justify-between pb-4 border-b border-slate-800">
-                  <div className="inline-flex items-center gap-2 px-3 py-1 rounded-sm bg-orange-600/20 text-orange-400 font-mono text-xs font-bold border border-orange-500/30">
+                <div className="flex items-center justify-between pb-4 border-b border-slate-200">
+                  <div className="inline-flex items-center gap-2 px-3 py-1 rounded-sm bg-orange-500/20 text-blue-600 font-mono text-xs font-bold border border-orange-500/30">
                     <Calendar className="w-3.5 h-3.5" />
                     <span>{milestone.month}</span>
                   </div>
@@ -46,21 +46,21 @@ export const RoadmapSection: React.FC<RoadmapSectionProps> = ({ onOpenAudit }) =
                 </div>
 
                 <div>
-                  <h3 className="text-xl sm:text-2xl font-black text-white tracking-tight group-hover:text-orange-400 transition">
+                  <h3 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight group-hover:text-blue-600 transition">
                     {milestone.title}
                   </h3>
-                  <div className="text-xs text-orange-500 font-bold uppercase tracking-wide mt-1">
+                  <div className="text-xs text-blue-600 font-bold uppercase tracking-wide mt-1">
                     {milestone.subtitle}
                   </div>
                 </div>
 
                 {/* Deliverables Checklist */}
                 <div className="space-y-2.5 pt-3">
-                  <span className="text-[10px] uppercase font-bold text-slate-400 tracking-wider block">
+                  <span className="text-[10px] uppercase font-bold text-slate-500 tracking-wider block">
                     Key Execution Deliverables:
                   </span>
                   {milestone.deliverables.map((item, idx) => (
-                    <div key={idx} className="flex items-start gap-2 text-xs text-slate-300 leading-relaxed">
+                    <div key={idx} className="flex items-start gap-2 text-xs text-slate-600 leading-relaxed">
                       <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
                       <span>{item}</span>
                     </div>
@@ -69,9 +69,9 @@ export const RoadmapSection: React.FC<RoadmapSectionProps> = ({ onOpenAudit }) =
               </div>
 
               {/* Milestone Expected Outcome */}
-              <div className="mt-8 pt-4 border-t border-slate-800/80 bg-slate-950/60 -mx-8 -mb-8 p-6 rounded-b-lg">
-                <div className="text-[10px] uppercase font-mono text-slate-400 font-bold flex items-center gap-1.5 mb-1">
-                  <Flag className="w-3.5 h-3.5 text-orange-400" />
+              <div className="mt-8 pt-4 border-t border-slate-200/80 bg-white/60 -mx-8 -mb-8 p-6 rounded-b-lg">
+                <div className="text-[10px] uppercase font-mono text-slate-500 font-bold flex items-center gap-1.5 mb-1">
+                  <Flag className="w-3.5 h-3.5 text-blue-600" />
                   Target Milestone Outcome:
                 </div>
                 <div className="text-xs text-emerald-400 font-semibold leading-normal">
@@ -84,12 +84,12 @@ export const RoadmapSection: React.FC<RoadmapSectionProps> = ({ onOpenAudit }) =
 
         {/* Roadmap CTA Strip */}
         <div className="mt-14 text-center space-y-4">
-          <p className="text-sm text-slate-400 max-w-xl mx-auto">
+          <p className="text-sm text-slate-500 max-w-xl mx-auto">
             Ready to accelerate your timeline? We begin by analyzing your current baseline ranking perimeter and competitor citation profile on Day 1.
           </p>
           <button
             onClick={onOpenAudit}
-            className="inline-flex items-center gap-2 bg-orange-600 hover:bg-orange-500 text-white px-8 py-4 font-black text-xs sm:text-sm tracking-tight rounded-sm uppercase shadow-xl shadow-orange-950/60 transition cursor-pointer group"
+            className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 font-black text-xs sm:text-sm tracking-tight rounded-sm uppercase shadow-xl shadow-orange-500/30 transition cursor-pointer group"
           >
             <span>Start Month 1 With a Free Audit</span>
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />

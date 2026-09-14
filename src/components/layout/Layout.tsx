@@ -1,14 +1,21 @@
 import React, { useState, useEffect } from 'react';
-import { Outlet } from 'react-router-dom';
+import { Outlet, useNavigate, useLocation } from 'react-router-dom';
 import { Navbar } from '../Navbar';
 import { Footer } from '../Footer';
-import { AuditModal } from '../AuditModal';
 import { DevToolkitModal } from '../DevToolkitModal';
 import { TECHNICAL_JSON_LD } from '../../data/content';
 
 export function Layout() {
-  const [isAuditModalOpen, setIsAuditModalOpen] = useState(false);
   const [isDevToolkitOpen, setIsDevToolkitOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const openAudit = () => navigate('/free-seo-audit');
+
+  // Scroll to top on route change
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
 
   // Dynamically inject the technical JSON-LD schema into head for live DOM inspection
   useEffect(() => {
@@ -23,24 +30,19 @@ export function Layout() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-50 font-sans antialiased selection:bg-orange-600 selection:text-white flex flex-col">
+    <div className="min-h-screen bg-white text-slate-900 font-sans antialiased selection:bg-orange-500 selection:text-white flex flex-col">
       <Navbar
-        onOpenAudit={() => setIsAuditModalOpen(true)}
+        onOpenAudit={openAudit}
         onOpenDevToolkit={() => setIsDevToolkitOpen(true)}
       />
 
       <main className="flex-grow">
-        <Outlet context={{ openAudit: () => setIsAuditModalOpen(true) }} />
+        <Outlet context={{ openAudit }} />
       </main>
 
       <Footer
         onOpenDevToolkit={() => setIsDevToolkitOpen(true)}
-        onOpenAudit={() => setIsAuditModalOpen(true)}
-      />
-
-      <AuditModal
-        isOpen={isAuditModalOpen}
-        onClose={() => setIsAuditModalOpen(false)}
+        onOpenAudit={openAudit}
       />
 
       <DevToolkitModal

@@ -36,12 +36,14 @@ export interface PricingTier {
 }
 
 export interface AuditRequest {
+  fullName: string;
   businessName: string;
   websiteOrGbp: string;
   city: string;
   primaryService: string;
   phone: string;
   email: string;
+  message: string;
 }
 
 export interface IndustrySpecialization {
