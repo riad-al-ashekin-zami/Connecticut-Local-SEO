@@ -12,6 +12,8 @@ import { NewHaven } from './pages/locations/NewHaven';
 import { Waterford } from './pages/locations/Waterford';
 import { FreeAudit } from './pages/FreeAudit';
 import { ThankYou } from './pages/ThankYou';
+import { BlogIndex } from './pages/BlogIndex';
+import { BlogPostPage } from './pages/BlogPostPage';
 
 export default function App() {
   return (
@@ -25,6 +27,9 @@ export default function App() {
             <Route path="seo-consultant-connecticut" element={<SeoConsultant />} />
             <Route path="contact" element={<Contact />} />
             
+            <Route path="blog" element={<BlogIndex />} />
+            <Route path="blog/:slug" element={<BlogPostPage />} />
+
             <Route path="free-seo-audit" element={<FreeAudit />} />
             <Route path="thank-you" element={<ThankYou />} />
 

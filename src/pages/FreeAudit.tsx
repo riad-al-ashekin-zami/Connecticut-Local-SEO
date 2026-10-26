@@ -201,7 +201,7 @@ export function FreeAudit() {
                     We'll use your details to contact you about your audit. Read our <a href="/contact/" className="text-blue-600 hover:underline">Privacy Policy</a>.
                   </p>
 
-                  {state.errors && state.errors.length > 0 && (
+                  {state.errors && (
                      <div className="mt-4 p-3 bg-red-50 text-red-700 rounded-lg text-sm border border-red-200">
                         There was a problem submitting your form. Please try again.
                      </div>

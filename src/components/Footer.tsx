@@ -113,6 +113,11 @@ export const Footer: React.FC<FooterProps> = ({ onOpenAudit, onOpenDevToolkit })
                     <span className="text-blue-600">›</span> Contact
                   </Link>
                 </li>
+                <li>
+                  <Link to="/blog" className="hover:text-blue-600 transition flex items-center gap-1.5">
+                    <span className="text-blue-600">›</span> Blog & Guides
+                  </Link>
+                </li>
               </ul>
             </div>
 
