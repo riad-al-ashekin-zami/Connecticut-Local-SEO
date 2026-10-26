@@ -29,6 +29,11 @@ export default function App() {
             
             <Route path="blog" element={<BlogIndex />} />
             <Route path="blog/:slug" element={<BlogPostPage />} />
+            <Route path="best-seo-company-connecticut" element={<BlogPostPage forcedSlug="best-seo-company-connecticut" />} />
+            <Route path="best-digital-marketing-agency-connecticut" element={<BlogPostPage forcedSlug="best-digital-marketing-agency-connecticut" />} />
+            <Route path="best-web-design-company-connecticut" element={<BlogPostPage forcedSlug="best-web-design-company-connecticut" />} />
+            <Route path="best-web-development-companies-connecticut" element={<BlogPostPage forcedSlug="best-web-development-companies-connecticut" />} />
+            <Route path="best-moving-companies-connecticut" element={<BlogPostPage forcedSlug="best-moving-companies-connecticut" />} />
 
             <Route path="free-seo-audit" element={<FreeAudit />} />
             <Route path="thank-you" element={<ThankYou />} />

@@ -122,6 +122,39 @@ export const Footer: React.FC<FooterProps> = ({ onOpenAudit, onOpenDevToolkit })
             </div>
 
             <div>
+              <div className="text-xs font-black uppercase tracking-widest text-white border-l-2 border-emerald-400 pl-2 mb-2.5">
+                CT Agency Directories
+              </div>
+              <ul className="space-y-1.5 text-blue-100 font-medium text-xs">
+                <li>
+                  <Link to="/blog/best-seo-company-connecticut" className="hover:text-blue-600 transition flex items-center gap-1.5">
+                    <span className="text-emerald-400">›</span> Best SEO Companies CT
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/blog/best-digital-marketing-agency-connecticut" className="hover:text-blue-600 transition flex items-center gap-1.5">
+                    <span className="text-emerald-400">›</span> Best Digital Agencies CT
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/blog/best-web-design-company-connecticut" className="hover:text-blue-600 transition flex items-center gap-1.5">
+                    <span className="text-emerald-400">›</span> Best Web Design CT
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/blog/best-web-development-companies-connecticut" className="hover:text-blue-600 transition flex items-center gap-1.5">
+                    <span className="text-emerald-400">›</span> Best Web Development CT
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/blog/best-moving-companies-connecticut" className="hover:text-blue-600 transition flex items-center gap-1.5">
+                    <span className="text-emerald-400">›</span> Best Moving Companies CT
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            <div>
               <div className="text-xs font-black uppercase tracking-widest text-white border-l-2 border-orange-500 pl-2 mb-2.5">
                 Target Locations
               </div>

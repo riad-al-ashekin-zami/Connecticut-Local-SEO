@@ -23,6 +23,17 @@ export function generateSitemapXml(baseUrl = 'https://localseoct.com'): string {
     { loc: `${baseUrl}/seo-wallingford-ct/`, lastmod: today, changefreq: 'monthly', priority: 0.85 },
     { loc: `${baseUrl}/seo-new-haven-ct/`, lastmod: today, changefreq: 'monthly', priority: 0.85 },
     { loc: `${baseUrl}/local-seo-waterford-ct/`, lastmod: today, changefreq: 'monthly', priority: 0.85 },
+    { loc: `${baseUrl}/blog/`, lastmod: today, changefreq: 'weekly', priority: 0.85 },
+    { loc: `${baseUrl}/blog/best-seo-company-connecticut/`, lastmod: today, changefreq: 'weekly', priority: 0.9 },
+    { loc: `${baseUrl}/best-seo-company-connecticut/`, lastmod: today, changefreq: 'weekly', priority: 0.9 },
+    { loc: `${baseUrl}/blog/best-digital-marketing-agency-connecticut/`, lastmod: today, changefreq: 'weekly', priority: 0.9 },
+    { loc: `${baseUrl}/best-digital-marketing-agency-connecticut/`, lastmod: today, changefreq: 'weekly', priority: 0.9 },
+    { loc: `${baseUrl}/blog/best-web-design-company-connecticut/`, lastmod: today, changefreq: 'weekly', priority: 0.9 },
+    { loc: `${baseUrl}/best-web-design-company-connecticut/`, lastmod: today, changefreq: 'weekly', priority: 0.9 },
+    { loc: `${baseUrl}/blog/best-web-development-companies-connecticut/`, lastmod: today, changefreq: 'weekly', priority: 0.9 },
+    { loc: `${baseUrl}/best-web-development-companies-connecticut/`, lastmod: today, changefreq: 'weekly', priority: 0.9 },
+    { loc: `${baseUrl}/blog/best-moving-companies-connecticut/`, lastmod: today, changefreq: 'weekly', priority: 0.9 },
+    { loc: `${baseUrl}/best-moving-companies-connecticut/`, lastmod: today, changefreq: 'weekly', priority: 0.9 },
   ];
 
   // Dynamic Connecticut Market Hub Silos

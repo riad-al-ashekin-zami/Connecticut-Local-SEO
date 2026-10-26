@@ -17,6 +17,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenAudit }) => {
     { name: 'SEO Services', href: '/seo-services-connecticut/' },
     { name: 'SEO Consultant', href: '/seo-consultant-connecticut/' },
     { name: 'Pricing', href: '/pricing/' },
+    { name: 'Blog', href: '/blog' },
     { name: 'Contact', href: '/contact/' },
   ];
 
