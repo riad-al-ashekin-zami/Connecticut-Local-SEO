@@ -5,6 +5,7 @@ export const BUSINESS_ENTITY = {
   legalName: 'Connecticut Local SEO LLC',
   targetDomain: 'localseoct.com',
   domainUrl: 'https://localseoct.com',
+  email: 'info@localseoct.com',
   address: {
     street: '50 Sunrise Cir',
     city: 'Wallingford',
@@ -330,7 +331,7 @@ export const TECHNICAL_JSON_LD = {
       'legalName': 'Connecticut Local SEO LLC',
       'url': 'https://localseoct.com/',
       'telephone': '+1-860-967-0660',
-      'email': 'lead@localseoct.com',
+      'email': 'info@localseoct.com',
       'priceRange': '$$$',
       'image': 'https://localseoct.com/assets/connecticut-local-seo-og.png',
       'address': {

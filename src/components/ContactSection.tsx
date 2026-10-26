@@ -38,6 +38,51 @@ export const ContactSection: React.FC = () => {
           </p>
         </div>
 
+        {/* Quick Direct Dispatch Channels (Highlighting Official Email & Phone) */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10 max-w-5xl mx-auto">
+          <a
+            href={`tel:${BUSINESS_ENTITY.phoneRaw}`}
+            className="flex items-center gap-3.5 p-4 rounded-lg bg-white border border-slate-200 hover:border-blue-500 hover:shadow-md transition-all group"
+          >
+            <div className="w-10 h-10 rounded-sm bg-emerald-500/10 border border-emerald-500/20 text-emerald-600 flex items-center justify-center shrink-0 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
+              <Phone className="w-5 h-5" />
+            </div>
+            <div>
+              <div className="text-[10px] font-bold text-slate-500 uppercase tracking-wider">Direct Inbound Line</div>
+              <div className="text-sm font-black text-slate-900 font-mono group-hover:text-blue-600 transition-colors">
+                {BUSINESS_ENTITY.phone}
+              </div>
+            </div>
+          </a>
+
+          <a
+            href={`mailto:${BUSINESS_ENTITY.email}`}
+            className="flex items-center gap-3.5 p-4 rounded-lg bg-orange-50/80 border-2 border-orange-300 hover:border-orange-500 hover:shadow-md transition-all group"
+          >
+            <div className="w-10 h-10 rounded-sm bg-orange-500 text-white flex items-center justify-center shrink-0 shadow-sm shadow-orange-500/30">
+              <Mail className="w-5 h-5" />
+            </div>
+            <div className="min-w-0">
+              <div className="text-[10px] font-bold text-orange-700 uppercase tracking-wider">Official Email</div>
+              <div className="text-sm font-black text-slate-900 font-mono truncate group-hover:text-orange-600 transition-colors">
+                {BUSINESS_ENTITY.email}
+              </div>
+            </div>
+          </a>
+
+          <div className="flex items-center gap-3.5 p-4 rounded-lg bg-white border border-slate-200">
+            <div className="w-10 h-10 rounded-sm bg-blue-500/10 border border-blue-500/20 text-blue-600 flex items-center justify-center shrink-0">
+              <MapPin className="w-5 h-5" />
+            </div>
+            <div>
+              <div className="text-[10px] font-bold text-slate-500 uppercase tracking-wider">Physical Hub</div>
+              <div className="text-xs font-bold text-slate-900">
+                {BUSINESS_ENTITY.address.street}, {BUSINESS_ENTITY.address.city}, {BUSINESS_ENTITY.address.state}
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
           
           {/* Audit Request Form (7 Columns) */}
@@ -271,7 +316,7 @@ export const ContactSection: React.FC = () => {
 
                 {/* Telephone */}
                 <div className="flex items-start gap-3 p-3.5 rounded-sm bg-slate-50 border border-slate-200">
-                  <Phone className="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" />
+                  <Phone className="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" />
                   <div>
                     <div className="text-[10px] font-bold text-slate-500 uppercase tracking-wider">Direct Phone Number</div>
                     <a
@@ -281,6 +326,21 @@ export const ContactSection: React.FC = () => {
                       {BUSINESS_ENTITY.phone}
                     </a>
                     <div className="text-[11px] text-slate-500">Click-to-Call Enabled Across All CT Devices</div>
+                  </div>
+                </div>
+
+                {/* Official Direct Email */}
+                <div className="flex items-start gap-3 p-3.5 rounded-sm bg-orange-50/70 border border-orange-200">
+                  <Mail className="w-5 h-5 text-orange-500 shrink-0 mt-0.5" />
+                  <div className="min-w-0 flex-1">
+                    <div className="text-[10px] font-bold text-orange-700 uppercase tracking-wider">Official Inbound Email</div>
+                    <a
+                      href={`mailto:${BUSINESS_ENTITY.email}`}
+                      className="font-black text-slate-900 text-base hover:text-blue-600 transition font-mono break-all block"
+                    >
+                      {BUSINESS_ENTITY.email}
+                    </a>
+                    <div className="text-[11px] text-slate-600">Direct Inquiries, Audits & Client Communications</div>
                   </div>
                 </div>
 

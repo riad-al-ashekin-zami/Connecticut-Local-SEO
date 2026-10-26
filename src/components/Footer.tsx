@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { MapPin, Phone, Globe, ShieldCheck, Clock, ArrowRight, CheckCircle2 } from 'lucide-react';
+import { MapPin, Phone, Globe, ShieldCheck, Clock, ArrowRight, CheckCircle2, Mail } from 'lucide-react';
 import { BUSINESS_ENTITY } from '../data/content';
 
 interface FooterProps {
@@ -19,12 +19,12 @@ export const Footer: React.FC<FooterProps> = ({ onOpenAudit, onOpenDevToolkit })
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-blue-100">
             <div className="flex items-center gap-3">
-              <div className="w-8 h-8 rounded-sm bg-orange-500/10 border border-blue-600/20 flex items-center justify-center text-blue-600 shrink-0">
-                <ShieldCheck className="w-4 h-4" />
+              <div className="w-9 h-9 rounded-sm bg-orange-500/20 border border-orange-400/50 flex items-center justify-center text-orange-400 shrink-0 shadow-sm shadow-orange-500/20">
+                <ShieldCheck className="w-5 h-5 text-orange-400" />
               </div>
               <div>
                 <p className="text-white font-bold text-xs uppercase tracking-tight">100% White-Hat Local SEO</p>
-                <p className="text-blue-200 text-[11px]">Strict algorithmic compliance with Google Map Pack guidelines</p>
+                <p className="text-blue-100 text-[11px]">Strict algorithmic compliance with Google Map Pack guidelines</p>
               </div>
             </div>
 
@@ -142,12 +142,12 @@ export const Footer: React.FC<FooterProps> = ({ onOpenAudit, onOpenDevToolkit })
                   </Link>
                 </li>
                 <li>
-                  <Link to="/blog/best-web-development-companies-connecticut" className="hover:text-blue-600 transition flex items-center gap-1.5">
+                  <Link to="/blog/best-web-development-companies-connecticut" className="hover:text-white transition flex items-center gap-1.5">
                     <span className="text-emerald-400">›</span> Best Web Development CT
                   </Link>
                 </li>
                 <li>
-                  <Link to="/blog/best-moving-companies-connecticut" className="hover:text-blue-600 transition flex items-center gap-1.5">
+                  <Link to="/blog/best-moving-companies-connecticut" className="hover:text-white transition flex items-center gap-1.5">
                     <span className="text-emerald-400">›</span> Best Moving Companies CT
                   </Link>
                 </li>
@@ -160,22 +160,22 @@ export const Footer: React.FC<FooterProps> = ({ onOpenAudit, onOpenDevToolkit })
               </div>
               <ul className="space-y-2 text-blue-100 font-medium text-xs">
                 <li>
-                  <Link to="/local-seo-danbury-ct/" className="hover:text-blue-600 transition flex items-center gap-1.5">
+                  <Link to="/local-seo-danbury-ct/" className="hover:text-white transition flex items-center gap-1.5">
                     <span className="text-blue-100">›</span> Danbury, CT
                   </Link>
                 </li>
                 <li>
-                  <Link to="/seo-wallingford-ct/" className="hover:text-blue-600 transition flex items-center gap-1.5">
+                  <Link to="/seo-wallingford-ct/" className="hover:text-white transition flex items-center gap-1.5">
                     <span className="text-blue-100">›</span> Wallingford, CT
                   </Link>
                 </li>
                 <li>
-                  <Link to="/seo-new-haven-ct/" className="hover:text-blue-600 transition flex items-center gap-1.5">
+                  <Link to="/seo-new-haven-ct/" className="hover:text-white transition flex items-center gap-1.5">
                     <span className="text-blue-100">›</span> New Haven, CT
                   </Link>
                 </li>
                 <li>
-                  <Link to="/local-seo-waterford-ct/" className="hover:text-blue-600 transition flex items-center gap-1.5">
+                  <Link to="/local-seo-waterford-ct/" className="hover:text-white transition flex items-center gap-1.5">
                     <span className="text-blue-100">›</span> Waterford, CT
                   </Link>
                 </li>
@@ -192,7 +192,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenAudit, onOpenDevToolkit })
               Physical dispatch from central Wallingford covering all major Connecticut municipal corridors:
             </p>
             <ul className="space-y-1.5 text-blue-100 text-[11px] font-medium">
-              <li className="text-blue-600 font-bold flex items-center gap-1">
+              <li className="text-orange-300 font-bold flex items-center gap-1">
                 <MapPin className="w-3 h-3 shrink-0" /> Wallingford (Central HQ)
               </li>
               <li>• New Haven County</li>
@@ -227,6 +227,16 @@ export const Footer: React.FC<FooterProps> = ({ onOpenAudit, onOpenDevToolkit })
                   <span className="text-[10px] uppercase text-slate-500 font-semibold block">Direct Inbound Line</span>
                   <a href={`tel:${BUSINESS_ENTITY.phoneRaw}`} className="text-slate-900 font-black hover:text-blue-600 transition font-mono text-sm">
                     {BUSINESS_ENTITY.phone}
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-2.5 pt-3 border-t border-slate-200">
+                <Mail className="w-4 h-4 text-orange-500 shrink-0" />
+                <div>
+                  <span className="text-[10px] uppercase text-slate-500 font-semibold block">Official Inbound Email</span>
+                  <a href={`mailto:${BUSINESS_ENTITY.email}`} className="text-slate-900 font-bold hover:text-blue-600 transition font-mono text-xs break-all">
+                    {BUSINESS_ENTITY.email}
                   </a>
                 </div>
               </div>

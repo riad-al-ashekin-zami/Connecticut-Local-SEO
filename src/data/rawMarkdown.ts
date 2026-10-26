@@ -2,6 +2,7 @@ export const RAW_MARKDOWN_COPY = `# Production-Ready Homepage Copy: localseoct.c
 **Brand Entity:** Connecticut Local SEO  
 **Primary Metro Hub:** 50 Sunrise Cir, Wallingford, CT 06492  
 **Direct Line:** +1 860-967-0660  
+**Official Email:** info@localseoct.com  
 **Deployment Target:** WordPress / Elementor / Headless CMS  
 
 ---
