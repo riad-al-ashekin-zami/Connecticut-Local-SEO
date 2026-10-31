@@ -170,7 +170,7 @@ export function Waterford() {
                 Your service radius doesn't stop at the Waterford town line.
               </p>
               <p className="text-slate-500 leading-relaxed">
-                As a specialized <Link to="/seo-services-connecticut/" className="text-blue-600 hover:underline">SEO agency</Link>, we systematically expand your digital footprint. We build highly optimized, unique service pages targeting New London to the east, East Lyme (Niantic) to the west, and Groton across the Thames River. 
+                As a specialized <Link to="/" className="text-blue-600 hover:underline">SEO agency</Link>, we systematically expand your digital footprint. We build highly optimized, unique service pages targeting New London to the east, East Lyme (Niantic) to the west, and Groton across the Thames River. 
               </p>
               <p className="text-slate-500 leading-relaxed">
                 Google's proximity filters make it difficult for a Waterford business to rank in the Groton Map Pack. Therefore, we engineer these service-area pages to capture the organic real estate *below* the Map Pack, ensuring your website acts as an aggressive lead generation engine across your entire service territory.

@@ -8,6 +8,7 @@ import { IndustriesSection } from '../components/IndustriesSection';
 import { RoadmapSection } from '../components/RoadmapSection';
 import { PricingSection } from '../components/PricingSection';
 import { CoverageSection } from '../components/CoverageSection';
+import { HomepageStrategicSections } from '../components/HomepageStrategicSections';
 import { FaqSection } from '../components/FaqSection';
 import { ContactSection } from '../components/ContactSection';
 
@@ -46,7 +47,10 @@ export function Home() {
       {/* Block 8: Strategic Statewide Coverage (Hubs from Wallingford to Greenwich) */}
       <CoverageSection />
 
-      {/* Block 9: FAQ Section */}
+      {/* Block 9: Merged Strategic Focus Sections */}
+      <HomepageStrategicSections />
+
+      {/* Block 10: FAQ Section */}
       <FaqSection />
 
       {/* Block 10: Contact & Conversion Anchor + Strict NAP Box */}

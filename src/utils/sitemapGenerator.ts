@@ -1,6 +1,7 @@
 /**
  * Automated Dynamic Sitemap Generator for localseoct.com
- * Automatically builds the XML with real-time lastmod dates, priorities, and change frequencies.
+ * Lists strictly valid, canonical 200-status URLs with trailing slashes.
+ * Excludes redirected, noindex, and non-canonical URLs.
  */
 
 export interface SitemapUrlEntry {
@@ -13,70 +14,24 @@ export interface SitemapUrlEntry {
 export function generateSitemapXml(baseUrl = 'https://localseoct.com'): string {
   const today = new Date().toISOString().split('T')[0];
 
-  const staticRoutes: SitemapUrlEntry[] = [
+  const canonicalRoutes: SitemapUrlEntry[] = [
     { loc: `${baseUrl}/`, lastmod: today, changefreq: 'daily', priority: 1.0 },
-    { loc: `${baseUrl}/seo-services-connecticut/`, lastmod: today, changefreq: 'weekly', priority: 0.9 },
     { loc: `${baseUrl}/pricing/`, lastmod: today, changefreq: 'weekly', priority: 0.9 },
-    { loc: `${baseUrl}/seo-consultant-connecticut/`, lastmod: today, changefreq: 'weekly', priority: 0.9 },
     { loc: `${baseUrl}/contact/`, lastmod: today, changefreq: 'monthly', priority: 0.85 },
+    { loc: `${baseUrl}/free-seo-audit/`, lastmod: today, changefreq: 'monthly', priority: 0.85 },
     { loc: `${baseUrl}/local-seo-danbury-ct/`, lastmod: today, changefreq: 'monthly', priority: 0.85 },
     { loc: `${baseUrl}/seo-wallingford-ct/`, lastmod: today, changefreq: 'monthly', priority: 0.85 },
     { loc: `${baseUrl}/seo-new-haven-ct/`, lastmod: today, changefreq: 'monthly', priority: 0.85 },
     { loc: `${baseUrl}/local-seo-waterford-ct/`, lastmod: today, changefreq: 'monthly', priority: 0.85 },
     { loc: `${baseUrl}/blog/`, lastmod: today, changefreq: 'weekly', priority: 0.85 },
     { loc: `${baseUrl}/blog/best-seo-company-connecticut/`, lastmod: today, changefreq: 'weekly', priority: 0.9 },
-    { loc: `${baseUrl}/best-seo-company-connecticut/`, lastmod: today, changefreq: 'weekly', priority: 0.9 },
     { loc: `${baseUrl}/blog/best-digital-marketing-agency-connecticut/`, lastmod: today, changefreq: 'weekly', priority: 0.9 },
-    { loc: `${baseUrl}/best-digital-marketing-agency-connecticut/`, lastmod: today, changefreq: 'weekly', priority: 0.9 },
     { loc: `${baseUrl}/blog/best-web-design-company-connecticut/`, lastmod: today, changefreq: 'weekly', priority: 0.9 },
-    { loc: `${baseUrl}/best-web-design-company-connecticut/`, lastmod: today, changefreq: 'weekly', priority: 0.9 },
     { loc: `${baseUrl}/blog/best-web-development-companies-connecticut/`, lastmod: today, changefreq: 'weekly', priority: 0.9 },
-    { loc: `${baseUrl}/best-web-development-companies-connecticut/`, lastmod: today, changefreq: 'weekly', priority: 0.9 },
     { loc: `${baseUrl}/blog/best-moving-companies-connecticut/`, lastmod: today, changefreq: 'weekly', priority: 0.9 },
-    { loc: `${baseUrl}/best-moving-companies-connecticut/`, lastmod: today, changefreq: 'weekly', priority: 0.9 },
   ];
 
-  // Dynamic Connecticut Market Hub Silos
-  const ctHubs = [
-    'wallingford-ct-local-seo',
-    'new-haven-ct-local-seo',
-    'hartford-ct-local-seo',
-    'stamford-ct-local-seo',
-    'greenwich-ct-local-seo',
-    'norwalk-ct-local-seo',
-    'bridgeport-ct-local-seo',
-    'danbury-ct-local-seo',
-    'waterbury-ct-local-seo',
-  ];
-
-  const hubRoutes: SitemapUrlEntry[] = ctHubs.map((slug) => ({
-    loc: `${baseUrl}/${slug}`,
-    lastmod: today,
-    changefreq: 'weekly',
-    priority: 0.8,
-  }));
-
-  // Dynamic Contractor Industry Silos
-  const contractorVerticals = [
-    'contractor-seo-connecticut',
-    'hvac-seo-connecticut',
-    'plumbing-local-seo-ct',
-    'electrician-local-seo-ct',
-    'roofing-contractor-seo-ct',
-    'appliance-repair-seo-ct',
-    'tree-service-seo-ct',
-  ];
-
-  const industryRoutes: SitemapUrlEntry[] = contractorVerticals.map((slug) => ({
-    loc: `${baseUrl}/${slug}`,
-    lastmod: today,
-    changefreq: 'weekly',
-    priority: 0.8,
-  }));
-
-  const allUrls = [...staticRoutes, ...hubRoutes, ...industryRoutes];
-
-  const xmlUrls = allUrls
+  const xmlUrls = canonicalRoutes
     .map(
       (entry) => `  <url>
     <loc>${escapeXml(entry.loc)}</loc>

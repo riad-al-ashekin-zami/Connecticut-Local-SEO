@@ -124,7 +124,7 @@ export const ContactSection: React.FC = () => {
                 {/* Formspree Special Settings */}
                 <input type="hidden" name="_subject" value={`New CT Local Audit Lead: ${formData.businessName || 'Connecticut Business'}`} />
                 <input type="hidden" name="form_type" value="Main Contact Page Audit Request" />
-                <input type="hidden" name="source_url" value={window.location.href} />
+                <input type="hidden" name="source_url" value={typeof window !== 'undefined' ? window.location.href : 'https://localseoct.com/'} />
 
                 {state.errors && (
                   <div className="p-3.5 rounded-sm bg-red-950/80 border border-red-800 text-red-200 text-xs flex items-center gap-2">

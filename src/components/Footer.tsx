@@ -94,13 +94,8 @@ export const Footer: React.FC<FooterProps> = ({ onOpenAudit, onOpenDevToolkit })
               </div>
               <ul className="space-y-2 text-blue-100 font-bold text-xs">
                 <li>
-                  <Link to="/seo-services-connecticut/" className="hover:text-blue-600 transition flex items-center gap-1.5">
-                    <span className="text-blue-600">›</span> SEO Services
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/seo-consultant-connecticut/" className="hover:text-blue-600 transition flex items-center gap-1.5">
-                    <span className="text-blue-600">›</span> SEO Consultant
+                  <Link to="/" className="hover:text-blue-600 transition flex items-center gap-1.5">
+                    <span className="text-blue-600">›</span> Local SEO Services
                   </Link>
                 </li>
                 <li>
@@ -114,7 +109,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenAudit, onOpenDevToolkit })
                   </Link>
                 </li>
                 <li>
-                  <Link to="/blog" className="hover:text-blue-600 transition flex items-center gap-1.5">
+                  <Link to="/blog/" className="hover:text-blue-600 transition flex items-center gap-1.5">
                     <span className="text-blue-600">›</span> Blog & Guides
                   </Link>
                 </li>
@@ -127,27 +122,27 @@ export const Footer: React.FC<FooterProps> = ({ onOpenAudit, onOpenDevToolkit })
               </div>
               <ul className="space-y-1.5 text-blue-100 font-medium text-xs">
                 <li>
-                  <Link to="/blog/best-seo-company-connecticut" className="hover:text-blue-600 transition flex items-center gap-1.5">
+                  <Link to="/blog/best-seo-company-connecticut/" className="hover:text-blue-600 transition flex items-center gap-1.5">
                     <span className="text-emerald-400">›</span> Best SEO Companies CT
                   </Link>
                 </li>
                 <li>
-                  <Link to="/blog/best-digital-marketing-agency-connecticut" className="hover:text-blue-600 transition flex items-center gap-1.5">
+                  <Link to="/blog/best-digital-marketing-agency-connecticut/" className="hover:text-blue-600 transition flex items-center gap-1.5">
                     <span className="text-emerald-400">›</span> Best Digital Agencies CT
                   </Link>
                 </li>
                 <li>
-                  <Link to="/blog/best-web-design-company-connecticut" className="hover:text-blue-600 transition flex items-center gap-1.5">
+                  <Link to="/blog/best-web-design-company-connecticut/" className="hover:text-blue-600 transition flex items-center gap-1.5">
                     <span className="text-emerald-400">›</span> Best Web Design CT
                   </Link>
                 </li>
                 <li>
-                  <Link to="/blog/best-web-development-companies-connecticut" className="hover:text-white transition flex items-center gap-1.5">
+                  <Link to="/blog/best-web-development-companies-connecticut/" className="hover:text-white transition flex items-center gap-1.5">
                     <span className="text-emerald-400">›</span> Best Web Development CT
                   </Link>
                 </li>
                 <li>
-                  <Link to="/blog/best-moving-companies-connecticut" className="hover:text-white transition flex items-center gap-1.5">
+                  <Link to="/blog/best-moving-companies-connecticut/" className="hover:text-white transition flex items-center gap-1.5">
                     <span className="text-emerald-400">›</span> Best Moving Companies CT
                   </Link>
                 </li>

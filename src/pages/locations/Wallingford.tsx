@@ -170,7 +170,7 @@ export function Wallingford() {
                 Your service radius doesn't stop at the Wallingford town line.
               </p>
               <p className="text-slate-500 leading-relaxed">
-                As a specialized <Link to="/seo-services-connecticut/" className="text-blue-600 hover:underline">SEO agency</Link>, we systematically expand your digital footprint outward. We build localized service pages targeting Meriden to the north, North Haven to the south, and Cheshire to the west. 
+                As a specialized <Link to="/" className="text-blue-600 hover:underline">SEO agency</Link>, we systematically expand your digital footprint outward. We build localized service pages targeting Meriden to the north, North Haven to the south, and Cheshire to the west. 
               </p>
               <p className="text-slate-500 leading-relaxed">
                 Google's algorithm makes it very difficult to rank a Wallingford address in the Cheshire Map Pack. We solve this by engineering highly optimized organic service-area pages that capture the traffic *below* the maps, ensuring your website acts as an aggressive lead generation engine across your entire Central CT territory.

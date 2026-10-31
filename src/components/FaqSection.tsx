@@ -59,7 +59,7 @@ export const FaqSection: React.FC = () => {
                   <div className="space-y-1.5 pr-2">
                     <div className="flex items-center gap-2">
                       <span className="text-[10px] font-mono font-black px-2 py-0.5 rounded-sm bg-white text-blue-600 border border-slate-200">
-                        FAQ 0{idx + 1}
+                        FAQ {idx + 1 < 10 ? `0${idx + 1}` : `${idx + 1}`}
                       </span>
                       <span className="text-[11px] font-mono text-emerald-400 font-bold flex items-center gap-1">
                         <Sparkles className="w-3 h-3" />

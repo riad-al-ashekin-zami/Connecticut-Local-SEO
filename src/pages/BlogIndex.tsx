@@ -20,12 +20,19 @@ export const BlogIndex: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Local SEO Guides, Agency Comparisons & Insights | {BUSINESS_ENTITY.brandName}</title>
+        <title>{`Local SEO Guides, Agency Comparisons & Insights | ${BUSINESS_ENTITY.brandName}`}</title>
         <meta
           name="description"
           content="Actionable local SEO guides, Connecticut agency comparisons, Google Business Profile tips, and regional ranking strategies for Connecticut businesses."
         />
-        <link rel="canonical" href={`${BUSINESS_ENTITY.domainUrl}/blog`} />
+        <link rel="canonical" href={`${BUSINESS_ENTITY.domainUrl}/blog/`} />
+        <meta property="og:title" content={`Local SEO Guides, Agency Comparisons & Insights | ${BUSINESS_ENTITY.brandName}`} />
+        <meta
+          property="og:description"
+          content="Actionable local SEO guides, Connecticut agency comparisons, Google Business Profile tips, and regional ranking strategies for Connecticut businesses."
+        />
+        <meta property="og:url" content={`${BUSINESS_ENTITY.domainUrl}/blog/`} />
+        <meta property="og:type" content="website" />
       </Helmet>
 
       {/* Hero Header */}
@@ -102,7 +109,7 @@ export const BlogIndex: React.FC = () => {
                             </span>
                           </div>
 
-                          <Link to={`/blog/${post.slug}`}>
+                          <Link to={`/blog/${post.slug}/`}>
                             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-slate-900 hover:text-blue-600 transition-colors leading-tight">
                               {post.title}
                             </h2>
@@ -148,7 +155,7 @@ export const BlogIndex: React.FC = () => {
                           </div>
 
                           <Link
-                            to={`/blog/${post.slug}`}
+                            to={`/blog/${post.slug}/`}
                             className="w-full bg-blue-600 hover:bg-blue-700 text-white font-black text-xs uppercase tracking-wide py-3.5 px-4 rounded-lg transition-colors shadow-sm flex items-center justify-center gap-2 text-center"
                           >
                             <span>Explore 7 Agencies Comparison</span>

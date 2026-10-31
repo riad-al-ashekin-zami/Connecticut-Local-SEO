@@ -308,6 +308,69 @@ export const FAQS_DATA: FaqItem[] = [
     wordCount: 47,
     snippetAnchor: 'local-seo-roi-ct',
   },
+  {
+    question: 'Do you work with our internal marketing team?',
+    answer:
+      'Yes. We frequently act as the specialized SEO division for Connecticut companies that already have internal marketing directors, content writers, or web developers. We provide technical audits, localized keyword roadmaps, and schema blueprints while your team handles implementation, or we can execute the campaign end-to-end.',
+    wordCount: 48,
+    snippetAnchor: 'internal-marketing-team-integration',
+  },
+  {
+    question: 'How does a specialized SEO agency differ from a consultant?',
+    answer:
+      'A consultant typically provides high-level audits and strategic recommendations, leaving the actual code implementation, content creation, and citation cleanup to you. As an agency, we deliver both strategic roadmap design and the physical execution—writing localized copy, engineering schema markup, fixing crawl errors, and building local authority links.',
+    wordCount: 50,
+    snippetAnchor: 'agency-vs-consultant-difference',
+  },
+  {
+    question: 'What size businesses do you typically partner with?',
+    answer:
+      'We work best with established small to mid-market businesses ($1M to $20M+ annual revenue) in Connecticut that have a proven sales model, high customer lifetime value, and the operational capacity to handle a significant increase in verified inbound call and job volume.',
+    wordCount: 42,
+    snippetAnchor: 'business-size-partnership-ct',
+  },
+  {
+    question: 'Do you outsource your SEO work overseas?',
+    answer:
+      'No. All campaign strategy, technical optimization, localized copywriting, schema engineering, and link outreach is managed by our dedicated in-house team. We do not use offshore white-label services, which allows us to maintain strict quality control and algorithmic compliance over every Connecticut campaign.',
+    wordCount: 46,
+    snippetAnchor: 'in-house-seo-quality-control',
+  },
+  {
+    question: 'Do you require long-term contracts?',
+    answer:
+      'No. We operate strictly on month-to-month agreements. We believe that an SEO partnership should be retained based on verified inbound calls and revenue ROI, not because of a legal trap. If you are not seeing the results we promised, you are free to walk away at any time without penalty.',
+    wordCount: 51,
+    snippetAnchor: 'no-long-term-contracts',
+  },
+  {
+    question: 'How do you handle local exclusivity?',
+    answer:
+      'We never compete against ourselves. If we partner with a service contractor or professional firm in a specific Connecticut market (such as New Haven, Stamford, or Danbury), we will not represent a direct competitor in that exact service territory. Our objective is to make you the undisputed market leader.',
+    wordCount: 50,
+    snippetAnchor: 'local-market-exclusivity',
+  },
+  {
+    question: 'Do I own my website, content, and citations?',
+    answer:
+      'Yes, 100%. You own all content produced, schema deployed, code enhancements, and citation profiles. We do not use proprietary hostage platforms or hold digital assets captive. If you ever pause or transition, every optimization and digital asset remains the sole property of your company.',
+    wordCount: 46,
+    snippetAnchor: 'full-digital-asset-ownership',
+  },
+  {
+    question: 'Do you provide technical SEO for complex website platforms?',
+    answer:
+      'Yes. Our team is deeply technical. Whether your web property runs on WordPress, Shopify, Next.js, or custom React frameworks, we diagnose crawl budget bottlenecks, resolve Core Web Vitals issues (LCP, CLS, INP), eliminate redirect issues, and deploy advanced nested JSON-LD schema to maximize indexation efficiency.',
+    wordCount: 46,
+    snippetAnchor: 'technical-seo-platforms',
+  },
+  {
+    question: 'Can local SEO help a small business compete with larger corporations?',
+    answer:
+      'Yes. Google’s local algorithm prioritizes physical proximity, verified local citations, and geo-specific entity signals. A properly optimized local Connecticut business regularly outranks massive national aggregators like Yelp, Angi, or large conglomerate brands in the Google Map 3-Pack for high-intent local queries.',
+    wordCount: 44,
+    snippetAnchor: 'small-business-vs-corporations',
+  },
 ];
 
 export const TECHNICAL_JSON_LD = {

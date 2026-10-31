@@ -19,6 +19,11 @@ export function FreeAudit() {
       <Helmet>
         <title>Get Your Free SEO Audit | Local SEO CT</title>
         <meta name="description" content="Request a free, comprehensive SEO audit for your Connecticut business. No obligation, just actionable insights to grow your traffic." />
+        <link rel="canonical" href="https://localseoct.com/free-seo-audit/" />
+        <meta property="og:title" content="Get Your Free SEO Audit | Local SEO CT" />
+        <meta property="og:description" content="Request a free, comprehensive SEO audit for your Connecticut business. No obligation, just actionable insights to grow your traffic." />
+        <meta property="og:url" content="https://localseoct.com/free-seo-audit/" />
+        <meta property="og:type" content="website" />
       </Helmet>
 
       <div className="min-h-screen bg-slate-50 pt-32 pb-24">
@@ -27,10 +32,14 @@ export function FreeAudit() {
             
             {/* Left Column - Value Prop */}
             <div className="space-y-8">
-              <h1 className="text-4xl md:text-5xl font-black text-slate-900 tracking-tight leading-tight">
-                Stop guessing. <br/>
-                <span className="text-blue-600">Start ranking.</span>
-              </h1>
+              <div>
+                <h1 className="text-4xl md:text-5xl font-black text-slate-900 tracking-tight leading-tight">
+                  Request Your Free <span className="text-blue-600">Local SEO Audit</span>
+                </h1>
+                <p className="text-xl font-bold text-slate-800 tracking-tight mt-3">
+                  Stop guessing. Start ranking.
+                </p>
+              </div>
               <p className="text-lg text-slate-600 leading-relaxed max-w-lg">
                 Enter your details below to receive a comprehensive analysis of your website's search performance, technical health, and local visibility.
               </p>
@@ -79,7 +88,7 @@ export function FreeAudit() {
                 
                 <form onSubmit={handleSubmit} className="space-y-5">
                   <input type="hidden" name="form_type" value="Free Audit Page Lead" />
-                  <input type="hidden" name="source_url" value={window.location.href} />
+                  <input type="hidden" name="source_url" value={typeof window !== 'undefined' ? window.location.href : 'https://localseoct.com/free-seo-audit/'} />
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                     <div>

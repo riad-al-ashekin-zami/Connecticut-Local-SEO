@@ -170,7 +170,7 @@ export function Danbury() {
                 Your business likely services more than just the Danbury city limits. Northern Fairfield County is a cluster of high-income municipalities that require strategic targeting.
               </p>
               <p className="text-slate-500 leading-relaxed">
-                As your <Link to="/seo-services-connecticut/" className="text-blue-600 hover:underline">SEO company</Link>, we build scalable "Service Area" architectures. We create highly optimized, unique landing pages for surrounding towns like Bethel, Brookfield, and Ridgefield. 
+                As your <Link to="/" className="text-blue-600 hover:underline">SEO company</Link>, we build scalable "Service Area" architectures. We create highly optimized, unique landing pages for surrounding towns like Bethel, Brookfield, and Ridgefield. 
               </p>
               <p className="text-slate-500 leading-relaxed">
                 Because it is difficult to rank a Danbury-addressed Google Business Profile in Ridgefield, these dedicated service-area pages are engineered to rank in the organic results *below* the Map Pack, ensuring that when someone searches for your services in neighboring towns, your business still captures the lead.

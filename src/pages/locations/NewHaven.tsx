@@ -170,7 +170,7 @@ export function NewHaven() {
                 While New Haven is the anchor, your target market likely extends across the surrounding coastal and inland suburbs.
               </p>
               <p className="text-slate-500 leading-relaxed">
-                As your <Link to="/seo-services-connecticut/" className="text-blue-600 hover:underline">SEO company</Link>, we systematically expand your reach. We create highly optimized service-area architectures targeting lucrative, high-income markets in East Haven, West Haven, Orange, Woodbridge, and Hamden.
+                As your <Link to="/" className="text-blue-600 hover:underline">SEO company</Link>, we systematically expand your reach. We create highly optimized service-area architectures targeting lucrative, high-income markets in East Haven, West Haven, Orange, Woodbridge, and Hamden.
               </p>
               <p className="text-slate-500 leading-relaxed">
                 By building distinct, non-competing landing pages for each municipality, we capture the organic search intent *below* the Map Pack, ensuring you maintain a dominant market share across the entire greater New Haven region.

@@ -35,7 +35,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenAudit })
             </span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight uppercase hover:text-blue-600 transition-colors cursor-pointer">
-            <Link to="/seo-services-connecticut/">
+            <Link to="/">
               Connecticut Local SEO Services <br className="hidden sm:inline" />
               <span className="text-blue-600 underline decoration-4 underline-offset-4">Built for Scalable Revenue</span>
             </Link>

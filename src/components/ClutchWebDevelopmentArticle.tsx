@@ -1064,21 +1064,21 @@ export const ClutchWebDevelopmentArticle: React.FC<ClutchWebDevelopmentArticlePr
                 </h3>
                 <div className="space-y-2 text-xs">
                   <Link
-                    to="/blog/best-seo-company-connecticut"
+                    to="/blog/best-seo-company-connecticut/"
                     className="block p-2.5 rounded-lg bg-slate-950/60 hover:bg-slate-800 border border-slate-800/80 text-slate-300 hover:text-emerald-400 transition-colors"
                   >
                     <div className="font-bold text-white">Best SEO Companies in CT</div>
                     <div className="text-[11px] text-slate-400 mt-0.5">Top 7 Connecticut search agencies</div>
                   </Link>
                   <Link
-                    to="/blog/best-digital-marketing-agency-connecticut"
+                    to="/blog/best-digital-marketing-agency-connecticut/"
                     className="block p-2.5 rounded-lg bg-slate-950/60 hover:bg-slate-800 border border-slate-800/80 text-slate-300 hover:text-emerald-400 transition-colors"
                   >
                     <div className="font-bold text-white">Best Digital Marketing Agencies CT</div>
                     <div className="text-[11px] text-slate-400 mt-0.5">Full-funnel digital marketing firms</div>
                   </Link>
                   <Link
-                    to="/blog/best-web-design-company-connecticut"
+                    to="/blog/best-web-design-company-connecticut/"
                     className="block p-2.5 rounded-lg bg-slate-950/60 hover:bg-slate-800 border border-slate-800/80 text-slate-300 hover:text-emerald-400 transition-colors"
                   >
                     <div className="font-bold text-white">Best Web Design Companies CT</div>

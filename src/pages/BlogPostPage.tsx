@@ -119,7 +119,7 @@ export const BlogPostPage: React.FC<BlogPostPageProps> = ({ forcedSlug }) => {
         '@type': 'ListItem',
         position: 2,
         name: 'Blog',
-        item: `${BUSINESS_ENTITY.domainUrl}/blog`,
+        item: `${BUSINESS_ENTITY.domainUrl}/blog/`,
       },
       {
         '@type': 'ListItem',

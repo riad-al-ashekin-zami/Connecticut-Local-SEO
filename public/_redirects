@@ -1,1 +1,46 @@
-/*    /index.html   200
+# ==============================================================================
+# Real Server-Side 301 Redirects for https://localseoct.com
+# Rule: No redirect chains, one hop straight to destination with trailing slash
+# ==============================================================================
+
+# 1. State-level Duplicate Keyword Pages -> Merge to Homepage (301)
+/seo-agency-connecticut/      https://localseoct.com/  301!
+/seo-agency-connecticut       https://localseoct.com/  301!
+/seo-company-connecticut/     https://localseoct.com/  301!
+/seo-company-connecticut      https://localseoct.com/  301!
+/seo-consultant-connecticut/  https://localseoct.com/  301!
+/seo-consultant-connecticut   https://localseoct.com/  301!
+/seo-services-connecticut/    https://localseoct.com/  301!
+/seo-services-connecticut     https://localseoct.com/  301!
+
+# 2. Legacy Non-Blog Article URLs -> Canonical /blog/ URLs (301)
+/best-seo-company-connecticut/                    https://localseoct.com/blog/best-seo-company-connecticut/  301!
+/best-seo-company-connecticut                     https://localseoct.com/blog/best-seo-company-connecticut/  301!
+/best-digital-marketing-agency-connecticut/       https://localseoct.com/blog/best-digital-marketing-agency-connecticut/  301!
+/best-digital-marketing-agency-connecticut        https://localseoct.com/blog/best-digital-marketing-agency-connecticut/  301!
+/best-web-design-company-connecticut/             https://localseoct.com/blog/best-web-design-company-connecticut/  301!
+/best-web-design-company-connecticut              https://localseoct.com/blog/best-web-design-company-connecticut/  301!
+/best-web-development-companies-connecticut/      https://localseoct.com/blog/best-web-development-companies-connecticut/  301!
+/best-web-development-companies-connecticut       https://localseoct.com/blog/best-web-development-companies-connecticut/  301!
+/best-moving-companies-connecticut/               https://localseoct.com/blog/best-moving-companies-connecticut/  301!
+/best-moving-companies-connecticut                https://localseoct.com/blog/best-moving-companies-connecticut/  301!
+
+# 3. Blog & Content URL Trailing Slash Standardization (301)
+/blog                                             https://localseoct.com/blog/  301!
+/blog/best-seo-company-connecticut                https://localseoct.com/blog/best-seo-company-connecticut/  301!
+/blog/best-digital-marketing-agency-connecticut   https://localseoct.com/blog/best-digital-marketing-agency-connecticut/  301!
+/blog/best-web-design-company-connecticut         https://localseoct.com/blog/best-web-design-company-connecticut/  301!
+/blog/best-web-development-companies-connecticut  https://localseoct.com/blog/best-web-development-companies-connecticut/  301!
+/blog/best-moving-companies-connecticut           https://localseoct.com/blog/best-moving-companies-connecticut/  301!
+
+# 4. Standard Core Pages Trailing Slash Enforcement (301)
+/contact                                          https://localseoct.com/contact/  301!
+/pricing                                          https://localseoct.com/pricing/  301!
+/free-seo-audit                                   https://localseoct.com/free-seo-audit/  301!
+/local-seo-danbury-ct                             https://localseoct.com/local-seo-danbury-ct/  301!
+/seo-wallingford-ct                               https://localseoct.com/seo-wallingford-ct/  301!
+/seo-new-haven-ct                                 https://localseoct.com/seo-new-haven-ct/  301!
+/local-seo-waterford-ct                           https://localseoct.com/local-seo-waterford-ct/  301!
+
+# 5. Client-Side SPA Fallback
+/*                                                /index.html  200

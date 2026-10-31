@@ -257,7 +257,7 @@ export const SEO_ARTICLE_FAQS: FaqItem[] = [
 ];
 
 export const SEO_ARTICLE_SOURCES: SourceCitation[] = [
-  { id: 1, url: 'https://localseoct.com/ and https://localseoct.com/seo-services-connecticut/', title: 'Local SEO CT Core Services & Overview' },
+  { id: 1, url: 'https://localseoct.com/', title: 'Local SEO CT Core Services & Overview' },
   { id: 2, url: 'https://www.webservicesct.com/', title: 'Web Services CT Official Website' },
   { id: 3, url: 'https://zerogravitymarketing.com/services/seo', title: 'Zero Gravity Marketing SEO Services' },
   { id: 4, url: 'https://aspiredigitalsolutions.com/ and https://aspiredigitalsolutions.com/services/seo/', title: 'Aspire Digital Solutions SEO & Marketing' },
@@ -1096,7 +1096,7 @@ export const PUBLISHED_BLOG_POSTS: BlogPost[] = [
     title: 'Best SEO Company in Connecticut: 7 Agencies to Consider',
     seoTitle: 'Best SEO Company in Connecticut: 7 Agencies Compared',
     metaDescription: 'Find the best SEO company in Connecticut for your business. Compare Local SEO CT and six other agencies for local SEO, web design, and AI search.',
-    canonicalUrl: 'https://localseoct.com/blog/best-seo-company-connecticut',
+    canonicalUrl: 'https://localseoct.com/blog/best-seo-company-connecticut/',
     publishDate: 'October 26, 2026',
     author: {
       name: 'Local SEO CT Editorial Board',
@@ -1127,7 +1127,7 @@ export const PUBLISHED_BLOG_POSTS: BlogPost[] = [
     title: 'Best Digital Marketing Agency in Connecticut: 7 Companies to Consider',
     seoTitle: 'Best Digital Marketing Agency in Connecticut: 7 Picks',
     metaDescription: 'Compare seven Connecticut digital marketing agencies, starting with Local SEO CT. Explore services, business fit, reviews, and questions to ask.',
-    canonicalUrl: 'https://localseoct.com/blog/best-digital-marketing-agency-connecticut',
+    canonicalUrl: 'https://localseoct.com/blog/best-digital-marketing-agency-connecticut/',
     publishDate: 'October 26, 2026',
     author: {
       name: 'Local SEO CT Editorial Board',
@@ -1158,7 +1158,7 @@ export const PUBLISHED_BLOG_POSTS: BlogPost[] = [
     title: 'Best Web Design Company in Connecticut: 7 Options to Compare',
     seoTitle: 'Best Web Design Company in Connecticut: 7 Options',
     metaDescription: 'Compare Connecticut web design companies for small-business, custom, WordPress, and e-commerce websites. Explore services and questions to ask.',
-    canonicalUrl: 'https://localseoct.com/blog/best-web-design-company-connecticut',
+    canonicalUrl: 'https://localseoct.com/blog/best-web-design-company-connecticut/',
     publishDate: 'October 26, 2026',
     author: {
       name: 'Local SEO CT Editorial Board',
@@ -1189,7 +1189,7 @@ export const PUBLISHED_BLOG_POSTS: BlogPost[] = [
     title: 'Best Web Development Companies in Connecticut: 7 Options to Compare',
     seoTitle: 'Best Web Development Companies in Connecticut: 7 Options',
     metaDescription: 'Compare web development companies in Connecticut for custom websites, B2B projects, WordPress, and e-commerce. Explore services and hiring questions.',
-    canonicalUrl: 'https://localseoct.com/blog/best-web-development-companies-connecticut',
+    canonicalUrl: 'https://localseoct.com/blog/best-web-development-companies-connecticut/',
     publishDate: 'October 26, 2026',
     author: {
       name: 'Local SEO CT Editorial Board',
@@ -1222,7 +1222,7 @@ export const PUBLISHED_BLOG_POSTS: BlogPost[] = [
     title: 'Best Moving Companies in Connecticut: 7 Options to Compare',
     seoTitle: 'Best Moving Companies in Connecticut: 7 Options',
     metaDescription: 'Compare Connecticut moving companies for local, apartment, interstate, and business moves. Explore packing, storage, estimates, and booking checks.',
-    canonicalUrl: 'https://localseoct.com/blog/best-moving-companies-connecticut',
+    canonicalUrl: 'https://localseoct.com/blog/best-moving-companies-connecticut/',
     publishDate: 'October 26, 2026',
     author: {
       name: 'Local SEO CT Editorial Board',

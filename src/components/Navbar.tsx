@@ -14,10 +14,9 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenAudit }) => {
   const location = useLocation();
 
   const navLinks = [
-    { name: 'SEO Services', href: '/seo-services-connecticut/' },
-    { name: 'SEO Consultant', href: '/seo-consultant-connecticut/' },
+    { name: 'Services', href: '/#services' },
     { name: 'Pricing', href: '/pricing/' },
-    { name: 'Blog', href: '/blog' },
+    { name: 'Blog', href: '/blog/' },
     { name: 'Contact', href: '/contact/' },
   ];
 
