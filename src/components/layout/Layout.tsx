@@ -10,7 +10,7 @@ export function Layout() {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const openAudit = () => navigate('/free-seo-audit');
+  const openAudit = () => navigate('/free-seo-audit/');
 
   // Scroll to top on route change
   useEffect(() => {

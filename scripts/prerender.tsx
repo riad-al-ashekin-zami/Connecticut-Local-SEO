@@ -98,6 +98,12 @@ const CANONICAL_ROUTES: RouteMeta[] = [
     description: 'Compare Connecticut moving companies for local, apartment, interstate, and business moves. Explore packing, storage, estimates, and booking checks.',
     canonical: 'https://localseoct.com/blog/best-moving-companies-connecticut/',
   },
+  {
+    path: '/thank-you/',
+    title: 'Thank You | Connecticut Local SEO',
+    description: 'Thank you for contacting Connecticut Local SEO. We will review your audit request and get back to you shortly.',
+    canonical: 'https://localseoct.com/thank-you/',
+  },
 ];
 
 export function prerenderAll() {

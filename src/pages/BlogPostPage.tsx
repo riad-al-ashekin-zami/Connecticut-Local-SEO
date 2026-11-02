@@ -49,7 +49,7 @@ export const BlogPostPage: React.FC<BlogPostPageProps> = ({ forcedSlug }) => {
           </p>
           <div className="flex flex-col gap-3">
             <Link
-              to="/blog"
+              to="/blog/"
               className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-xl transition-colors shadow-md text-sm"
             >
               Browse All Blog Articles
@@ -208,7 +208,7 @@ export const BlogPostPage: React.FC<BlogPostPageProps> = ({ forcedSlug }) => {
               <nav className="flex items-center text-xs font-semibold text-slate-500 space-x-2">
                 <Link to="/" className="hover:text-blue-600 transition-colors">Home</Link>
                 <ChevronRight className="w-3.5 h-3.5" />
-                <Link to="/blog" className="hover:text-blue-600 transition-colors">Blog</Link>
+                <Link to="/blog/" className="hover:text-blue-600 transition-colors">Blog</Link>
                 <ChevronRight className="w-3.5 h-3.5" />
                 <span className="text-slate-900 truncate max-w-[280px] sm:max-w-md">{post.title}</span>
               </nav>
@@ -302,7 +302,7 @@ export const BlogPostPage: React.FC<BlogPostPageProps> = ({ forcedSlug }) => {
             {/* Post Footer Navigation */}
             <div className="pt-8 border-t border-slate-200 flex items-center justify-between">
               <Link
-                to="/blog"
+                to="/blog/"
                 className="inline-flex items-center gap-2 text-sm font-bold text-slate-700 hover:text-blue-600 transition-colors"
               >
                 <ArrowLeft className="w-4 h-4" />

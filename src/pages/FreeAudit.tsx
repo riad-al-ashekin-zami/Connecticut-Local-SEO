@@ -10,7 +10,7 @@ export function FreeAudit() {
 
   useEffect(() => {
     if (state.succeeded) {
-      navigate('/thank-you');
+      navigate('/thank-you/');
     }
   }, [state.succeeded, navigate]);
 

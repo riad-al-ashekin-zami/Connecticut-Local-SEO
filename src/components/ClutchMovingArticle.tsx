@@ -117,7 +117,7 @@ export const ClutchMovingArticle: React.FC<ClutchMovingArticleProps> = ({ post }
           <nav aria-label="Breadcrumb" className="flex items-center space-x-2 text-slate-400">
             <Link to="/" className="hover:text-amber-400 transition-colors">Home</Link>
             <span>/</span>
-            <Link to="/blog" className="hover:text-amber-400 transition-colors">Directory</Link>
+            <Link to="/blog/" className="hover:text-amber-400 transition-colors">Directory</Link>
             <span>/</span>
             <span className="text-slate-200 font-medium truncate max-w-[200px] sm:max-w-xs">
               Moving Companies CT
@@ -867,14 +867,14 @@ export const ClutchMovingArticle: React.FC<ClutchMovingArticleProps> = ({ post }
                 </p>
                 <div className="pt-2 flex flex-wrap gap-4">
                   <Link
-                    to="/contact"
+                    to="/contact/"
                     className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-sm bg-amber-500 hover:bg-amber-400 text-slate-950 shadow-lg shadow-amber-500/20 transition-all"
                   >
                     <Phone className="w-4 h-4" />
                     Speak with Local SEO CT
                   </Link>
                   <Link
-                    to="/free-audit"
+                    to="/free-seo-audit/"
                     className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-sm bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition-all"
                   >
                     Claim Free CT SEO Audit

@@ -101,7 +101,7 @@ export const ClutchDirectoryArticle: React.FC<ClutchDirectoryArticleProps> = ({ 
             <nav className="flex items-center space-x-2 text-slate-500 font-medium">
               <Link to="/" className="hover:text-blue-600 transition-colors">Home</Link>
               <span>/</span>
-              <Link to="/blog" className="hover:text-blue-600 transition-colors">Blog</Link>
+              <Link to="/blog/" className="hover:text-blue-600 transition-colors">Blog</Link>
               <span>/</span>
               <span className="text-slate-900 font-semibold truncate max-w-[240px] sm:max-w-md">
                 Best SEO Company Connecticut
@@ -538,7 +538,7 @@ export const ClutchDirectoryArticle: React.FC<ClutchDirectoryArticleProps> = ({ 
                     <div className="text-xs sm:text-sm font-semibold">
                       <span className="text-slate-500 mr-1.5">Next step:</span>
                       <Link
-                        to="/contact"
+                        to="/contact/"
                         className="text-blue-600 hover:text-blue-800 underline font-bold inline-flex items-center gap-1"
                       >
                         Contact Local SEO CT <ArrowRight className="w-3.5 h-3.5" />
@@ -580,7 +580,7 @@ export const ClutchDirectoryArticle: React.FC<ClutchDirectoryArticleProps> = ({ 
                 Your brief should identify the services you want to grow and the towns you can realistically serve. A contractor looking for installation projects should not use the same success criteria as a business seeking maintenance bookings.
               </p>
               <div className="pt-2">
-                <Link to="/contact" className="text-xs font-bold text-blue-700 hover:text-blue-900 flex items-center gap-1">
+                <Link to="/contact/" className="text-xs font-bold text-blue-700 hover:text-blue-900 flex items-center gap-1">
                   Discuss Local Calls with Local SEO CT <ArrowRight className="w-3 h-3" />
                 </Link>
               </div>
@@ -909,7 +909,7 @@ export const ClutchDirectoryArticle: React.FC<ClutchDirectoryArticleProps> = ({ 
               </a>
 
               <Link
-                to="/contact"
+                to="/contact/"
                 className="text-xs font-bold text-slate-300 hover:text-white underline underline-offset-4 pl-2"
               >
                 Visit Contact Page →

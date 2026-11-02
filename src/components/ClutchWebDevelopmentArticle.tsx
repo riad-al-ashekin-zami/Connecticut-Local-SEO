@@ -162,7 +162,7 @@ export const ClutchWebDevelopmentArticle: React.FC<ClutchWebDevelopmentArticlePr
           <nav aria-label="Breadcrumb" className="flex items-center space-x-2 text-slate-400">
             <Link to="/" className="hover:text-emerald-400 transition-colors">Home</Link>
             <span>/</span>
-            <Link to="/blog" className="hover:text-emerald-400 transition-colors">Directory</Link>
+            <Link to="/blog/" className="hover:text-emerald-400 transition-colors">Directory</Link>
             <span>/</span>
             <span className="text-slate-200 font-medium truncate max-w-[200px] sm:max-w-xs">
               Web Development Companies CT
@@ -433,7 +433,7 @@ export const ClutchWebDevelopmentArticle: React.FC<ClutchWebDevelopmentArticlePr
                       <div className="sm:self-center shrink-0">
                         {agency.isFeatured ? (
                           <Link
-                            to="/contact"
+                            to="/contact/"
                             className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-bold text-sm bg-emerald-500 hover:bg-emerald-400 text-slate-950 shadow-lg shadow-emerald-500/20 transition-all"
                           >
                             <Phone className="w-4 h-4" />
@@ -934,14 +934,14 @@ export const ClutchWebDevelopmentArticle: React.FC<ClutchWebDevelopmentArticlePr
                 </p>
                 <div className="pt-2 flex flex-wrap gap-4">
                   <Link
-                    to="/contact"
+                    to="/contact/"
                     className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-sm bg-emerald-500 hover:bg-emerald-400 text-slate-950 shadow-lg shadow-emerald-500/20 transition-all"
                   >
                     <Phone className="w-4 h-4" />
                     Speak with Local SEO CT
                   </Link>
                   <Link
-                    to="/free-audit"
+                    to="/free-seo-audit/"
                     className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-sm bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition-all"
                   >
                     Request Free Technical Audit
@@ -1019,7 +1019,7 @@ export const ClutchWebDevelopmentArticle: React.FC<ClutchWebDevelopmentArticlePr
                 </div>
 
                 <Link
-                  to="/contact"
+                  to="/contact/"
                   className="w-full inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl font-bold text-sm bg-emerald-500 hover:bg-emerald-400 text-slate-950 shadow-lg shadow-emerald-500/20 transition-all text-center"
                 >
                   <Phone className="w-4 h-4" />
@@ -1027,7 +1027,7 @@ export const ClutchWebDevelopmentArticle: React.FC<ClutchWebDevelopmentArticlePr
                 </Link>
 
                 <Link
-                  to="/free-audit"
+                  to="/free-seo-audit/"
                   className="w-full mt-2 inline-flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-xl font-medium text-xs bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700 transition-all text-center"
                 >
                   Get Free Pre-Build Audit

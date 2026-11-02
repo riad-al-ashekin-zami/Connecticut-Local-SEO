@@ -1,0 +1,10 @@
+[build]
+  publish = "dist"
+  command = "npm run build"
+
+# Enable pretty URLs so Netlify serves directory-based routes (/page/) natively
+[build.processing]
+  skip_processing = false
+
+[build.processing.html]
+  pretty_urls = true

@@ -39,22 +39,25 @@ const LEGACY_ARTICLES: Record<string, string> = {
 // Redirect middleware: Real server-side HTTP 301
 app.use((req, res, next) => {
   const reqPath = req.path;
+  const host = req.get('host') || '';
+  const isProdLive = host.includes('localseoct.com');
 
   // Direct 301 for duplicate state-level pages to homepage
   if (STATE_DUPLICATES.includes(reqPath)) {
-    res.setHeader('Location', 'https://localseoct.com/');
+    res.setHeader('Location', isProdLive ? 'https://localseoct.com/' : '/');
     return res.status(301).end();
   }
 
   // Direct 301 for legacy non-blog article URLs
   if (LEGACY_ARTICLES[reqPath]) {
-    res.setHeader('Location', LEGACY_ARTICLES[reqPath]);
+    const dest = LEGACY_ARTICLES[reqPath];
+    res.setHeader('Location', isProdLive ? dest : dest.replace('https://localseoct.com', ''));
     return res.status(301).end();
   }
 
   // Trailing slash enforcement for non-trailing slash routes (excluding static assets with file extensions)
   if (!reqPath.endsWith('/') && !path.extname(reqPath)) {
-    const targetUrl = `https://localseoct.com${reqPath}/`;
+    const targetUrl = isProdLive ? `https://localseoct.com${reqPath}/` : `${reqPath}/`;
     res.setHeader('Location', targetUrl);
     return res.status(301).end();
   }

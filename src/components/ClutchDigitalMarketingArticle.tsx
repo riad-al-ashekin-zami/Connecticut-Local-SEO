@@ -120,7 +120,7 @@ export const ClutchDigitalMarketingArticle: React.FC<ClutchDigitalMarketingArtic
             <nav className="flex items-center space-x-2 text-slate-500 font-medium">
               <Link to="/" className="hover:text-blue-600 transition-colors">Home</Link>
               <span>/</span>
-              <Link to="/blog" className="hover:text-blue-600 transition-colors">Blog</Link>
+              <Link to="/blog/" className="hover:text-blue-600 transition-colors">Blog</Link>
               <span>/</span>
               <span className="text-slate-900 font-semibold truncate max-w-[240px] sm:max-w-md">
                 Best Digital Marketing Agency Connecticut
@@ -557,7 +557,7 @@ export const ClutchDigitalMarketingArticle: React.FC<ClutchDigitalMarketingArtic
                     <div className="text-xs sm:text-sm font-semibold">
                       <span className="text-slate-500 mr-1.5">Next step:</span>
                       <Link
-                        to="/contact"
+                        to="/contact/"
                         className="text-blue-600 hover:text-blue-800 underline font-bold inline-flex items-center gap-1"
                       >
                         Contact Local SEO CT <ArrowRight className="w-3.5 h-3.5" />
@@ -1036,7 +1036,7 @@ export const ClutchDigitalMarketingArticle: React.FC<ClutchDigitalMarketingArtic
               </a>
 
               <Link
-                to="/contact"
+                to="/contact/"
                 className="text-xs font-bold text-slate-300 hover:text-white underline underline-offset-4 pl-2"
               >
                 Visit Contact Page →
